@@ -32,8 +32,10 @@ def pizza(request, pizza_id):
     toppings = pizza.topping_set.all()
     comments = Comment.objects.filter(pizza=pizza_id)
 
+
     if request.method == 'GET':                             
         image = pizza.image_set.all()
+
 
     context = {'pizza':pizza, 'toppings':toppings, 'comments':comments, 'image':image}
     return render(request, 'Pizzas/pizza.html', context)
