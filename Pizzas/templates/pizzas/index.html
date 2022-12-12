@@ -1,0 +1,19 @@
+{% extends "Pizzas/base.html" %}
+
+
+{% block content %}
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+
+
+
+<p> Findlay Family Pizzeria </p>
+
+<p> "Best Pizzas this side of the Mississippi!" </p>
+<p> Call to Place an Order: 903-705-5343 </p>
+
+<img src="{% static 'CoverPic.jpg' %}">
+
+{% endblock content %}
